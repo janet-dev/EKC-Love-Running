@@ -241,4 +241,83 @@ footer {
 }
 
 
+/* Responsive Design */
+/* screen size for tablets */
+@media screen and (max-width: 1393px) {
+  #club-ethos {
+    width: 65%;
+    height: 1200px;
+    margin: 0 auto;
+  }
+  #welcome {
+    padding 30px 0;
+    margin-top: 0;
+  }
+  #left-about, #right-about {
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
+  #center-about {
+    clear: both;
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
+
+  /* this will target both tablets and phones - we will stack the times vertically */
+  #times div {
+    width: 100%;
+    clear: both;
+    height: 150%;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #fff; /* can use 3 chars for simple colours */
+    padding: 0; /* clear the padding */
+  }
+  hr {
+    display: none;
+  }  
+}
+
+/* screen size for phones */
+@media screen and (max-width: 943px) {
+  #menu {
+    clear: left;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+  #cover-text {
+    left: 0;
+  }
+  #club-ethos {
+    width: 90%;
+    height: 1200px;
+    margin: 0 auto;
+  }
+  .left-about-heading, .right-about-heading {
+    width: inherit;
+  }
+  .left-about-heading h2, .right-about-heading h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .left-about-heading p, .right-about-heading p {
+    text-align: center;
+    padding: 0 20px 0 20px;
+  }
+  #photo {
+    column-count: 3;
+  }  
+}
+
+/* very small phone screens */
+@media screen and (max-width: 800px) {
+  #photo {
+    column-count: 2;
+  }
+}
+
 /* comment */
