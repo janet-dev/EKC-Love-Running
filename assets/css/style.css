@@ -61,12 +61,13 @@ logo, #menu {
   border-bottom: 1px solid #777777;
 }
 
-/*Hero image has animation*/
+/*Hero image has animation
+Images added to css have no alt info - this may be ok if it's used for decoration only*/
 #hero-image {
   height: 600px;
   width: 100%;
   background: url("../img/sherise-vd-YmtGI-fBW70-unsplash.jpg") no-repeat center center;
-
+  
   animation-name: hero-zoom;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -127,14 +128,12 @@ logo, #menu {
   padding-top: 30px;
   width: 33%;
   float: right;
-  background-color: silver;
 }
 #center-about {
   padding-top: 30px;
   width: 33%;
   margin: 0 auto; 
   /*there is no float:center, so this is the easiest option - note that this is the last div listed*/
-  background-color: green;
 }
 
 hr {
@@ -144,12 +143,72 @@ hr {
 }
 
 .left-about-heading {
-  width: 50%;
+  width: 50%; /*of parent div with class right-header ie 33% of entire screen*/
   float: right; /*want text to align with photo in middle*/
   line-height: 20px; /*for easy reading*/
   clear: both; /*to ensure each content block aligns vertically*/
+  margin-bottom: 50px; /* set space between upper & lower content blocks */
+}
+
+.right-about-heading {
+  width: 50%;
+  float: left;
+  line-height: 20px;
+  clear: both;
   margin-bottom: 50px;
 }
 
+/* gives the impression of text curving around the central image */
+.right-about-heading h2 {
+  text-align: right;
+}
+.right-about-heading p {
+  text-align: right;
+}
 
+#welcome {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 280%;
+}
+
+#circle-container {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 1px;
+  border-radius: 50%; /* to make a circle */
+  margin: 0 auto; /* centre the image */
+}
+#circle-cover-bg {
+  background: url("../img/kim-carpenter-IHIgnhLvz5Q-unsplash-sm.jpg") no-repeat center center;
+  height: 100%;
+  border-radius: 50%;
+} /* used a picture 300px x 300px */
+
+#times {
+  background-image: url("../img/k-mitch-hodge-znItvqcLmJA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+#times div {
+  color: #fafafa;
+  background-color: rgba(0,0,0,.6);
+  width: 19%;
+  height: 300px;
+  float: left;
+  padding: 30px 0 0 10px;
+  text-align: center;
+  margin: 4px;
+  
+}
+#times h2 {
+  color: #fafafa;
+}
 /* comment */
